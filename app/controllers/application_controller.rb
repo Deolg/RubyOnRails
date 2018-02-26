@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   def hello
     render text: "Hello lego"
   end
+
+  def goodBye
+    render text: 'GoodBye'
+  end
 end
