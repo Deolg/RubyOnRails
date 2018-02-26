@@ -41,7 +41,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   #gem 'sqlite3'
   gem 'byebug', platform: :mri
-  gem 'web-console', '>= 3.3.0'
+  gem 'guard'
+
   gem 'spring'
 end
 
