@@ -8,3 +8,4 @@
 /tmp
 # Игнорировать файлы Spring
 /spring/*.pid
+\.byebug_history

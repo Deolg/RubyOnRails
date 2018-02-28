@@ -9,6 +9,9 @@
       <%= csrf_meta_tags %>
     </head>
     <body>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
       
       <%= render 'layouts/header' %>
       
@@ -17,5 +20,6 @@
       </div>
 
       <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
     </body>
 </html>
